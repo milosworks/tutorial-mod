@@ -1,7 +1,7 @@
 {
-  "variants": {
-	"": {
-	  "model": "tutorialmod:block/raw_ruby_block"
+	"variants": {
+		"": {
+			"model": "tutorialmod:block/raw_ruby_block"
+		}
 	}
-  }
 }

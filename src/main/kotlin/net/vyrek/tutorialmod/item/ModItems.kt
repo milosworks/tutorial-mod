@@ -6,10 +6,14 @@ import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry
 import net.minecraft.util.Identifier
 import net.vyrek.tutorialmod.TutorialMod
+import net.vyrek.tutorialmod.item.custom.MetalDetectorItem
 
 object ModItems {
 	val RUBY: Item = registerItem("ruby", Item(FabricItemSettings()))
 	val RAW_RUBY: Item = registerItem("raw_ruby", Item(FabricItemSettings()))
+
+	val METAL_DETECTOR: Item =
+		registerItem("metal_detector", MetalDetectorItem(FabricItemSettings().maxDamage(64)))
 
 //	private fun addItemsToIngredientItemGroup(entries: FabricItemGroupEntries) {
 //		entries.add(RUBY)

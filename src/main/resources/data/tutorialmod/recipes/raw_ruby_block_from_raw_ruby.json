@@ -1,17 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-	"###",
-	"###",
-	"###"
-  ],
-  "key": {
-	"#": {
-	  "item": "tutorialmod:raw_ruby"
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"###",
+		"###",
+		"###"
+	],
+	"key": {
+		"#": {
+			"item": "tutorialmod:raw_ruby"
+		}
+	},
+	"result": {
+		"item": "tutorialmod:raw_ruby_block"
 	}
-  },
-  "result": {
-	"item": "tutorialmod:raw_ruby_block"
-  }
 }
