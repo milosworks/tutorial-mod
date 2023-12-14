@@ -1,6 +1,7 @@
 package net.vyrek.tutorialmod
 
 import net.fabricmc.api.ModInitializer
+import net.fabricmc.fabric.api.registry.FuelRegistry
 import net.vyrek.tutorialmod.block.ModBlocks
 import net.vyrek.tutorialmod.item.ModItemGroups
 import net.vyrek.tutorialmod.item.ModItems
@@ -17,5 +18,7 @@ object TutorialMod : ModInitializer {
 		ModItems.registerModItems()
 
 		ModBlocks.registerModBlocks()
+
+		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 200)
 	}
 }

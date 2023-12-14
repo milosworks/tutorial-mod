@@ -2,11 +2,16 @@
 	"item.tutorialmod.ruby": "Ruby",
 	"item.tutorialmod.raw_ruby": "Raw Ruby",
 	"item.tutorialmod.metal_detector": "Metal Detector",
+	"item.tutorialmod.tomato": "Tomato",
+	"item.tutorialmod.coal_briquette": "Coal Briquette",
+	"block.tutorialmod.sound_block": "Sound Block",
 	"block.tutorialmod.ruby_block": "Block of Ruby",
 	"block.tutorialmod.raw_ruby_block": "Block of Raw Ruby",
 	"block.tutorialmod.ruby_ore": "Ruby Ore",
 	"block.tutorialmod.deepslate_ruby_ore": "Deepslate Ruby Ore",
 	"block.tutorialmod.nether_ruby_ore": "Nether Ruby Ore",
 	"block.tutorialmod.end_stone_ruby_ore": "Endstone Ruby Ore",
-	"itemgroup.ruby": "Ruby Group"
+	"itemgroup.ruby": "Ruby Group",
+	"tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables underground",
+	"tooltip.tutorialmod.sound_block.tooltip": "Makes a sweet sound when right-clicked"
 }

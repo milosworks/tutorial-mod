@@ -1,5 +1,6 @@
 package net.vyrek.tutorialmod.block
 
+import net.fabricmc.fabric.api.block.v1.FabricBlock
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.minecraft.block.Block
@@ -13,6 +14,7 @@ import net.minecraft.sound.BlockSoundGroup
 import net.minecraft.util.Identifier
 import net.minecraft.util.math.intprovider.UniformIntProvider
 import net.vyrek.tutorialmod.TutorialMod
+import net.vyrek.tutorialmod.block.custom.SoundBlock
 
 object ModBlocks {
 	val RUBY_BLOCK: Block = registerBlock(
@@ -51,6 +53,11 @@ object ModBlocks {
 			FabricBlockSettings.copyOf(Blocks.END_STONE).strength(3f),
 			UniformIntProvider.create(5, 8)
 		)
+	)
+
+	val SOUND_BLOCK: Block = registerBlock(
+		"sound_block",
+		SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))
 	)
 
 	private fun registerBlock(name: String, block: Block): Block {

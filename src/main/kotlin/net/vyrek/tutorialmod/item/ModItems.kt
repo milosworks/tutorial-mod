@@ -15,6 +15,10 @@ object ModItems {
 	val METAL_DETECTOR: Item =
 		registerItem("metal_detector", MetalDetectorItem(FabricItemSettings().maxDamage(64)))
 
+	val TOMATO: Item =
+		registerItem("tomato", Item(FabricItemSettings().food(ModFoodComponents.TOMATO)))
+	val COAL_BRIQUETTE = registerItem("coal_briquette", Item(FabricItemSettings()))
+
 //	private fun addItemsToIngredientItemGroup(entries: FabricItemGroupEntries) {
 //		entries.add(RUBY)
 //		entries.add(RAW_RUBY)
