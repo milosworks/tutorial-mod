@@ -3,9 +3,7 @@ package net.vyrek.tutorialmod.block
 import net.fabricmc.fabric.api.block.v1.FabricBlock
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
-import net.minecraft.block.Block
-import net.minecraft.block.Blocks
-import net.minecraft.block.ExperienceDroppingBlock
+import net.minecraft.block.*
 import net.minecraft.item.BlockItem
 import net.minecraft.item.Item
 import net.minecraft.registry.Registries
@@ -58,6 +56,55 @@ object ModBlocks {
 	val SOUND_BLOCK: Block = registerBlock(
 		"sound_block",
 		SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))
+	)
+
+	val RUBY_STAIRS: Block = registerBlock(
+		"ruby_stairs",
+		StairsBlock(ModBlocks.RUBY_BLOCK.defaultState, FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))
+	)
+	val RUBY_SLAB: Block = registerBlock(
+		"ruby_slab",
+		SlabBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))
+	)
+
+	val RUBY_BUTTON: Block = registerBlock(
+		"ruby_button",
+		ButtonBlock(
+			FabricBlockSettings.copyOf(Blocks.IRON_BLOCK),
+			BlockSetType.IRON,
+			10,
+			true
+		)
+	)
+	val RUBY_PRESSURE_PLATE: Block = registerBlock(
+		"ruby_pressure_plate",
+		PressurePlateBlock(
+			PressurePlateBlock.ActivationRule.EVERYTHING,
+			FabricBlockSettings.copyOf(Blocks.IRON_BLOCK),
+			BlockSetType.IRON
+		)
+	)
+
+	val RUBY_FENCE: Block = registerBlock(
+		"ruby_fence",
+		FenceBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))
+	)
+	val RUBY_FENCE_GATE: Block = registerBlock(
+		"ruby_fence_gate",
+		FenceGateBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), WoodType.ACACIA)
+	)
+	val RUBY_WALL: Block = registerBlock(
+		"ruby_wall",
+		WallBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))
+	)
+
+	val RUBY_DOOR: Block = registerBlock(
+		"ruby_door",
+		DoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), BlockSetType.IRON)
+	)
+	val RUBY_TRAPDOOR: Block = registerBlock(
+		"ruby_trapdoor",
+		TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), BlockSetType.IRON)
 	)
 
 	private fun registerBlock(name: String, block: Block): Block {

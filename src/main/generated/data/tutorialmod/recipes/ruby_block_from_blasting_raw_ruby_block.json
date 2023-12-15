@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 400,
+  "experience": 5.4,
+  "group": "ruby",
+  "ingredient": {
+    "item": "tutorialmod:raw_ruby_block"
+  },
+  "result": "tutorialmod:ruby_block"
+}

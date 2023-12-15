@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 600,
+  "experience": 5.4,
+  "group": "ruby",
+  "ingredient": {
+    "item": "tutorialmod:raw_ruby_block"
+  },
+  "result": "tutorialmod:ruby_block"
+}
