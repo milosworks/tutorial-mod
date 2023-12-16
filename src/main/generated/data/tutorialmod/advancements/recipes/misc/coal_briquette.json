@@ -27,7 +27,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:coal_briquette"
+        "recipe": "tutorialmod:coal_briquette"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -41,7 +41,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:coal_briquette"
+      "tutorialmod:coal_briquette"
     ]
   },
   "sends_telemetry_event": false

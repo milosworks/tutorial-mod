@@ -10,8 +10,8 @@
     }
   },
   "pattern": [
-    " RR",
-    " SR",
+    "RR ",
+    "RS ",
     " S "
   ],
   "result": {

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:ruby_trapdoor"
+        "recipe": "tutorialmod:ruby_trapdoor"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:ruby_trapdoor"
+      "tutorialmod:ruby_trapdoor"
     ]
   },
   "sends_telemetry_event": false

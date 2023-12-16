@@ -27,7 +27,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:coal"
+        "recipe": "tutorialmod:coal"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -41,7 +41,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:coal"
+      "tutorialmod:coal"
     ]
   },
   "sends_telemetry_event": false

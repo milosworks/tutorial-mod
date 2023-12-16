@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:ruby_stairs"
+        "recipe": "tutorialmod:ruby_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:ruby_stairs"
+      "tutorialmod:ruby_stairs"
     ]
   },
   "sends_telemetry_event": false

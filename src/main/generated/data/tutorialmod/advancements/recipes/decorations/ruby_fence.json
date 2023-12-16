@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:ruby_fence"
+        "recipe": "tutorialmod:ruby_fence"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:ruby_fence"
+      "tutorialmod:ruby_fence"
     ]
   },
   "sends_telemetry_event": false

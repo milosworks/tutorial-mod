@@ -6,6 +6,7 @@ import net.minecraft.data.DataOutput
 import net.minecraft.data.client.BlockStateModelGenerator
 import net.minecraft.data.client.ItemModelGenerator
 import net.minecraft.data.client.Models
+import net.minecraft.item.ArmorItem
 import net.vyrek.tutorialmod.block.ModBlocks
 import net.vyrek.tutorialmod.item.ModItems
 
@@ -43,5 +44,10 @@ class ModModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
 		itemModelGenerator.register(ModItems.RUBY_SHOVEL, Models.HANDHELD)
 		itemModelGenerator.register(ModItems.RUBY_SWORD, Models.HANDHELD)
 		itemModelGenerator.register(ModItems.RUBY_HOE, Models.HANDHELD)
+
+		itemModelGenerator.registerArmor(ModItems.RUBY_HELMET as ArmorItem)
+		itemModelGenerator.registerArmor(ModItems.RUBY_CHESTPLATE as ArmorItem)
+		itemModelGenerator.registerArmor(ModItems.RUBY_LEGGINGS as ArmorItem)
+		itemModelGenerator.registerArmor(ModItems.RUBY_BOOTS as ArmorItem)
 	}
 }

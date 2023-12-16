@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:ruby_door"
+        "recipe": "tutorialmod:ruby_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:ruby_door"
+      "tutorialmod:ruby_door"
     ]
   },
   "sends_telemetry_event": false

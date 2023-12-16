@@ -2,6 +2,7 @@ package net.vyrek.tutorialmod.item
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.block.Blocks
+import net.minecraft.item.ArmorItem
 import net.minecraft.item.AxeItem
 import net.minecraft.item.HoeItem
 import net.minecraft.item.Item
@@ -13,6 +14,7 @@ import net.minecraft.registry.Registry
 import net.minecraft.util.Identifier
 import net.vyrek.tutorialmod.TutorialMod
 import net.vyrek.tutorialmod.item.custom.MetalDetectorItem
+import net.vyrek.tutorialmod.item.custom.ModArmorItem
 
 object ModItems {
 	val RUBY: Item = registerItem("ruby", Item(FabricItemSettings()))
@@ -66,6 +68,35 @@ object ModItems {
 			ModToolMaterial.RUBY,
 			10,
 			8.5f,
+			FabricItemSettings()
+		)
+	)
+
+	val RUBY_HELMET: Item = registerItem(
+		"ruby_helmet", ModArmorItem(
+			ModArmorMaterials.RUBY,
+			ArmorItem.Type.HELMET,
+			FabricItemSettings()
+		)
+	)
+	val RUBY_CHESTPLATE: Item = registerItem(
+		"ruby_chestplate", ArmorItem(
+			ModArmorMaterials.RUBY,
+			ArmorItem.Type.CHESTPLATE,
+			FabricItemSettings()
+		)
+	)
+	val RUBY_LEGGINGS: Item = registerItem(
+		"ruby_leggings", ArmorItem(
+			ModArmorMaterials.RUBY,
+			ArmorItem.Type.LEGGINGS,
+			FabricItemSettings()
+		)
+	)
+	val RUBY_BOOTS: Item = registerItem(
+		"ruby_boots", ArmorItem(
+			ModArmorMaterials.RUBY,
+			ArmorItem.Type.BOOTS,
 			FabricItemSettings()
 		)
 	)

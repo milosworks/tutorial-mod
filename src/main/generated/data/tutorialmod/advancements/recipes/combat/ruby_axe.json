@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:ruby_axe"
+        "recipe": "tutorialmod:ruby_axe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:ruby_axe"
+      "tutorialmod:ruby_axe"
     ]
   },
   "sends_telemetry_event": false
