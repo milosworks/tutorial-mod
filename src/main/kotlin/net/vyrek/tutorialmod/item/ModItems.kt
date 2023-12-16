@@ -1,7 +1,13 @@
 package net.vyrek.tutorialmod.item
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
+import net.minecraft.block.Blocks
+import net.minecraft.item.AxeItem
+import net.minecraft.item.HoeItem
 import net.minecraft.item.Item
+import net.minecraft.item.PickaxeItem
+import net.minecraft.item.ShovelItem
+import net.minecraft.item.SwordItem
 import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry
 import net.minecraft.util.Identifier
@@ -17,7 +23,52 @@ object ModItems {
 
 	val TOMATO: Item =
 		registerItem("tomato", Item(FabricItemSettings().food(ModFoodComponents.TOMATO)))
+
 	val COAL_BRIQUETTE = registerItem("coal_briquette", Item(FabricItemSettings()))
+
+	val RUBY_STAFF: Item =
+		registerItem("ruby_staff", Item(FabricItemSettings().maxCount(1)))
+
+	val RUBY_PICKAXE: Item = registerItem(
+		"ruby_pickaxe", PickaxeItem(
+			ModToolMaterial.RUBY,
+			2,
+			2f,
+			FabricItemSettings()
+		)
+	)
+	val RUBY_AXE: Item = registerItem(
+		"ruby_axe", AxeItem(
+			ModToolMaterial.RUBY,
+			4f,
+			2f,
+			FabricItemSettings()
+		)
+	)
+	val RUBY_SHOVEL: Item = registerItem(
+		"ruby_shovel", ShovelItem(
+			ModToolMaterial.RUBY,
+			1.2f,
+			3f,
+			FabricItemSettings()
+		)
+	)
+	val RUBY_SWORD: Item = registerItem(
+		"ruby_sword", SwordItem(
+			ModToolMaterial.RUBY,
+			5,
+			2.5f,
+			FabricItemSettings()
+		)
+	)
+	val RUBY_HOE: Item = registerItem(
+		"ruby_hoe", HoeItem(
+			ModToolMaterial.RUBY,
+			10,
+			8.5f,
+			FabricItemSettings()
+		)
+	)
 
 //	private fun addItemsToIngredientItemGroup(entries: FabricItemGroupEntries) {
 //		entries.add(RUBY)

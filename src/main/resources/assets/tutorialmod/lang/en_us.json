@@ -4,13 +4,24 @@
 	"item.tutorialmod.metal_detector": "Metal Detector",
 	"item.tutorialmod.tomato": "Tomato",
 	"item.tutorialmod.coal_briquette": "Coal Briquette",
+	
+	"item.tutorialmod.ruby_staff": "Ruby Staff",
+	
+	"item.tutorialmod.ruby_pickaxe": "Ruby Pickaxe",
+	"item.tutorialmod.ruby_axe": "Ruby Axe",
+	"item.tutorialmod.ruby_shovel": "Ruby Shovel",
+	"item.tutorialmod.ruby_sword": "Ruby Sword",
+	"item.tutorialmod.ruby_hoe": "Ruby Hoe",
+	
 	"block.tutorialmod.sound_block": "Sound Block",
+	
 	"block.tutorialmod.ruby_block": "Block of Ruby",
 	"block.tutorialmod.raw_ruby_block": "Block of Raw Ruby",
 	"block.tutorialmod.ruby_ore": "Ruby Ore",
 	"block.tutorialmod.deepslate_ruby_ore": "Deepslate Ruby Ore",
 	"block.tutorialmod.nether_ruby_ore": "Nether Ruby Ore",
 	"block.tutorialmod.end_stone_ruby_ore": "Endstone Ruby Ore",
+	
 	"block.tutorialmod.ruby_stairs": "Ruby Stairs",
 	"block.tutorialmod.ruby_slab": "Ruby Slab",
 	"block.tutorialmod.ruby_button": "Ruby Button",
@@ -20,7 +31,9 @@
 	"block.tutorialmod.ruby_wall": "Ruby Wall",
 	"block.tutorialmod.ruby_door": "Ruby Door",
 	"block.tutorialmod.ruby_trapdoor": "Ruby Trapdoor",
+	
 	"itemgroup.ruby": "Ruby Group",
+	
 	"tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables underground",
 	"tooltip.tutorialmod.sound_block.tooltip": "Makes a sweet sound when right-clicked"
 }

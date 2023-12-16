@@ -53,6 +53,11 @@ class ModBlockTagProvider(
 		)
 			.add(ModBlocks.END_STONE_RUBY_ORE)
 
+		getOrCreateTagBuilder(
+			TagKey.of(RegistryKeys.BLOCK, Identifier("fabric", "needs_tool_level_5"))
+		)
+			.add(ModBlocks.SOUND_BLOCK)
+
 		getOrCreateTagBuilder(BlockTags.STAIRS)
 			.add(ModBlocks.RUBY_STAIRS)
 		getOrCreateTagBuilder(BlockTags.SLABS)
