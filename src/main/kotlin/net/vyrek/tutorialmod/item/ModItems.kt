@@ -2,6 +2,7 @@ package net.vyrek.tutorialmod.item
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.block.Blocks
+import net.minecraft.item.AliasedBlockItem
 import net.minecraft.item.ArmorItem
 import net.minecraft.item.AxeItem
 import net.minecraft.item.HoeItem
@@ -13,6 +14,7 @@ import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry
 import net.minecraft.util.Identifier
 import net.vyrek.tutorialmod.TutorialMod
+import net.vyrek.tutorialmod.block.ModBlocks
 import net.vyrek.tutorialmod.item.custom.MetalDetectorItem
 import net.vyrek.tutorialmod.item.custom.ModArmorItem
 
@@ -25,6 +27,17 @@ object ModItems {
 
 	val TOMATO: Item =
 		registerItem("tomato", Item(FabricItemSettings().food(ModFoodComponents.TOMATO)))
+	val TOMATO_SEEDS = registerItem(
+		"tomato_seeds",
+		AliasedBlockItem(ModBlocks.TOMATO_CROP, FabricItemSettings())
+	)
+
+	val CORN: Item =
+		registerItem("corn", Item(FabricItemSettings().food(ModFoodComponents.CORN)))
+	val CORN_SEEDS = registerItem(
+		"corn_seeds",
+		AliasedBlockItem(ModBlocks.CORN_CROP, FabricItemSettings())
+	)
 
 	val COAL_BRIQUETTE = registerItem("coal_briquette", Item(FabricItemSettings()))
 

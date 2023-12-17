@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.registry.FuelRegistry
 import net.vyrek.tutorialmod.block.ModBlocks
 import net.vyrek.tutorialmod.item.ModItemGroups
 import net.vyrek.tutorialmod.item.ModItems
+import net.vyrek.tutorialmod.util.ModLootTableModifiers
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
@@ -18,6 +19,8 @@ object TutorialMod : ModInitializer {
 		ModItems.registerModItems()
 
 		ModBlocks.registerModBlocks()
+
+		ModLootTableModifiers.modifyLootTables()
 
 		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 200)
 	}

@@ -1,4 +1,4 @@
-// 1.20.1	2023-12-16T13:19:22.6040001	Tutorial Mod/Recipes
+// 1.20.1	2023-12-17T11:32:27.5492802	Tutorial Mod/Recipes
 151194aa62d023af9e53352cf76f89a4b8fd48ce data\tutorialmod\advancements\recipes\redstone\ruby_fence_gate.json
 9198aabc51512cc828873688ba7fd5355af3d81f data\tutorialmod\advancements\recipes\combat\ruby_axe.json
 9bc9a96b4cc0bc878d0039cfc0147fa40b262862 data\tutorialmod\advancements\recipes\combat\ruby_chestplate.json
@@ -29,6 +29,7 @@ f8265b795d877a68449088d40dbfb69d5468c24e data\tutorialmod\recipes\ruby_sword.jso
 73d740e47f026a694d83e26a4f3e12128c2d12bc data\tutorialmod\advancements\recipes\misc\ruby_from_smelting_raw_ruby.json
 10e93747b210488efcc6427d53cf8ed07f02c345 data\tutorialmod\recipes\raw_ruby_block.json
 ea4de3923e81d12aa4d8f6843a100e0d2ee5fe36 data\tutorialmod\recipes\raw_ruby.json
+b03e301cc18edb70da8ffff353c83a786bf9bdfd data\tutorialmod\advancements\recipes\food\tomato_seeds.json
 3405284d8d6da28e43aec664816a668e8952f6a1 data\tutorialmod\advancements\recipes\misc\coal.json
 2271396d0767d2b21da94f275cf2a9a3caba370c data\tutorialmod\advancements\recipes\misc\ruby_block_from_smelting_raw_ruby_block.json
 c02310d4b3cd082a45b396acaf393d92ad870cbb data\tutorialmod\advancements\recipes\redstone\ruby_trapdoor.json
@@ -42,8 +43,8 @@ b7ade36a971731897182087854d7c96798bb9d40 data\tutorialmod\advancements\recipes\c
 c53b9f20bb2e27a3d7ef7d6a10de00364daf38ef data\tutorialmod\recipes\ruby_block.json
 f8c376d4b6c2902d55be7d67c18bb8586cde8a38 data\tutorialmod\advancements\recipes\redstone\ruby_door.json
 aff92c7e80e5eb2064d7feedc1c2438bb7245f9b data\tutorialmod\advancements\recipes\building_blocks\ruby.json
-1987ac757c8a02a017675ddb5747d66ff74654fd data\tutorialmod\recipes\coal.json
 1bdf97b9e41a7b89a29e96c6e12300fa73ca9f15 data\tutorialmod\recipes\ruby_from_blasting_ruby_ore.json
+1987ac757c8a02a017675ddb5747d66ff74654fd data\tutorialmod\recipes\coal.json
 dc5036953d78b5df59ca4f2ee932943bb4b6c753 data\tutorialmod\recipes\coal_briquette.json
 115a2a33c919b771d6bf1292032c30ccb926756a data\tutorialmod\recipes\ruby_pickaxe.json
 c152329c121785fde70c46cbb406f01eb891d5ae data\tutorialmod\advancements\recipes\misc\ruby_from_blasting_raw_ruby.json
@@ -51,6 +52,7 @@ dc083a1c7a9130acf9c2eef4b172d06f730e6d33 data\tutorialmod\advancements\recipes\b
 17664245e3a1b526c165c97f41f043edec4e24f2 data\tutorialmod\recipes\ruby_fence_gate.json
 182dbcb1c7a9f0aaac4b6f0baf38ef70df62d8d4 data\tutorialmod\advancements\recipes\tools\ruby_shovel.json
 05f1304d48451987f659d4afa40b6a7cbde9f368 data\tutorialmod\advancements\recipes\misc\ruby_from_blasting_ruby_ore.json
+00ee9584aeb7160bd00b609beec9d097c333a18b data\tutorialmod\recipes\tomato_seeds.json
 dc3258a378cf202bce6457bdfcd9c2382e0387e8 data\tutorialmod\recipes\ruby_leggings.json
 cc5dd172260f9f8e6ea916445b3c306829912b13 data\tutorialmod\recipes\ruby_from_blasting_raw_ruby.json
 a5e91c26b1dfdc85ebf1fd9665d05a57d014ff1f data\tutorialmod\advancements\recipes\misc\ruby_from_blasting_end_stone_ruby_ore.json

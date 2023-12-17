@@ -16,6 +16,7 @@ import net.vyrek.tutorialmod.block.ModBlocks
 import net.vyrek.tutorialmod.item.ModItems
 import net.vyrek.tutorialmod.util.ModIdentifier
 import java.util.function.Consumer
+import kotlin.math.exp
 
 class ModRecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
 	private val rubySmeltables: List<ItemConvertible> = listOf(
@@ -78,6 +79,12 @@ class ModRecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output)
 			RecipeCategory.DECORATIONS,
 			ModBlocks.RAW_RUBY_BLOCK
 		)
+
+		ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.TOMATO_SEEDS, 4)
+			.input(ModItems.TOMATO)
+			.criterion(hasItem(ModItems.TOMATO), RecipeProvider.conditionsFromItem(ModItems.TOMATO))
+			.criterion(hasItem(ModItems.TOMATO_SEEDS), RecipeProvider.conditionsFromItem(ModItems.TOMATO_SEEDS))
+			.offerTo(exporter, ModIdentifier.identifier(getRecipeName(ModItems.TOMATO_SEEDS)))
 
 		ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COAL_BRIQUETTE, 2)
 			.input(Items.COAL)
@@ -201,7 +208,7 @@ class ModRecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output)
 			.input('R', ModItems.RUBY)
 			.criterion(hasItem(ModItems.RUBY), RecipeProvider.conditionsFromItem(ModItems.RUBY))
 			.offerTo(exporter, ModIdentifier.identifier(getRecipeName(ModItems.RUBY_BOOTS)))
-		
+
 		// raw ruby from ruby and stone
 //		ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_RUBY, 1)
 //			.pattern("SSS")

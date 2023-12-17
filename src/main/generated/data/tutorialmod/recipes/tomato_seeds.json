@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tutorialmod:tomato"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "tutorialmod:tomato_seeds"
+  }
+}

@@ -7,11 +7,15 @@ import net.minecraft.data.DataOutput
 import net.minecraft.enchantment.Enchantments
 import net.minecraft.item.Item
 import net.minecraft.loot.LootTable
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition
 import net.minecraft.loot.entry.ItemEntry
 import net.minecraft.loot.function.ApplyBonusLootFunction
 import net.minecraft.loot.function.SetCountLootFunction
 import net.minecraft.loot.provider.number.UniformLootNumberProvider
+import net.minecraft.predicate.StatePredicate
 import net.vyrek.tutorialmod.block.ModBlocks
+import net.vyrek.tutorialmod.block.custom.CornCropBlock
+import net.vyrek.tutorialmod.block.custom.TomatoCropBlock
 import net.vyrek.tutorialmod.item.ModItems
 
 class ModLootTableProvider(dataOutput: FabricDataOutput) : FabricBlockLootTableProvider(dataOutput) {
@@ -46,6 +50,28 @@ class ModLootTableProvider(dataOutput: FabricDataOutput) : FabricBlockLootTableP
 		addDrop(ModBlocks.RUBY_WALL)
 		addDrop(ModBlocks.RUBY_DOOR, doorDrops(ModBlocks.RUBY_DOOR))
 		addDrop(ModBlocks.RUBY_TRAPDOOR)
+
+		addDrop(
+			ModBlocks.TOMATO_CROP, cropDrops(
+				ModBlocks.TOMATO_CROP,
+				ModItems.TOMATO,
+				ModItems.TOMATO_SEEDS,
+				BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_CROP).properties(
+					StatePredicate.Builder.create().exactMatch(TomatoCropBlock.AGE, 5)
+				)
+			)
+		)
+
+		addDrop(
+			ModBlocks.CORN_CROP, cropDrops(
+				ModBlocks.CORN_CROP,
+				ModItems.CORN,
+				ModItems.CORN_SEEDS,
+				BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP).properties(
+					StatePredicate.Builder.create().exactMatch(CornCropBlock.AGE, 8)
+				)
+			)
+		)
 	}
 
 	private fun dropWithSilkTouchAndQuantity(drop: Block, item: Item, min: Float, max: Float): LootTable.Builder {

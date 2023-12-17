@@ -20,6 +20,10 @@ object ModItemGroups {
 					entries.add(ModItems.RAW_RUBY)
 
 					entries.add(ModItems.TOMATO)
+					entries.add(ModItems.TOMATO_SEEDS)
+
+					entries.add(ModItems.CORN)
+					entries.add(ModItems.CORN_SEEDS)
 
 					entries.add(ModItems.COAL_BRIQUETTE)
 

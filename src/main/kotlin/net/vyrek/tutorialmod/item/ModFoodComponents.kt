@@ -10,4 +10,10 @@ object ModFoodComponents {
 		.saturationModifier(0.25f)
 		.statusEffect(StatusEffectInstance(StatusEffects.LUCK, 200), 0.25f)
 		.build()
+
+	val CORN: FoodComponent = FoodComponent.Builder()
+		.hunger(2)
+		.saturationModifier(0.1f)
+		.statusEffect(StatusEffectInstance(StatusEffects.NAUSEA, 400), 0.1f)
+		.build()
 }

@@ -2,10 +2,14 @@
 	"item.tutorialmod.ruby": "Ruby",
 	"item.tutorialmod.raw_ruby": "Raw Ruby",
 	"item.tutorialmod.metal_detector": "Metal Detector",
-	"item.tutorialmod.tomato": "Tomato",
 	"item.tutorialmod.coal_briquette": "Coal Briquette",
-	
 	"item.tutorialmod.ruby_staff": "Ruby Staff",
+	
+	"item.tutorialmod.tomato": "Tomato",
+	"item.tutorialmod.tomato_seeds": "Tomato Seeds",
+	
+	"item.tutorialmod.corn": "Corn",
+	"item.tutorialmod.corn_seeds": "Corn Seeds",
 	
 	"item.tutorialmod.ruby_pickaxe": "Ruby Pickaxe",
 	"item.tutorialmod.ruby_axe": "Ruby Axe",

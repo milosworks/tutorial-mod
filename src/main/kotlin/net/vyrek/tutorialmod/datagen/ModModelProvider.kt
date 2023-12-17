@@ -8,6 +8,8 @@ import net.minecraft.data.client.ItemModelGenerator
 import net.minecraft.data.client.Models
 import net.minecraft.item.ArmorItem
 import net.vyrek.tutorialmod.block.ModBlocks
+import net.vyrek.tutorialmod.block.custom.CornCropBlock
+import net.vyrek.tutorialmod.block.custom.TomatoCropBlock
 import net.vyrek.tutorialmod.item.ModItems
 
 class ModModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
@@ -29,6 +31,9 @@ class ModModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
 		rubyPool.wall(ModBlocks.RUBY_WALL)
 		blockStateModelGenerator.registerDoor(ModBlocks.RUBY_DOOR)
 		blockStateModelGenerator.registerTrapdoor(ModBlocks.RUBY_TRAPDOOR)
+
+		blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5)
+		blockStateModelGenerator.registerCrop(ModBlocks.CORN_CROP, CornCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7, 8)
 	}
 
 	override fun generateItemModels(itemModelGenerator: ItemModelGenerator) {
@@ -36,8 +41,10 @@ class ModModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
 		itemModelGenerator.register(ModItems.RAW_RUBY, Models.GENERATED)
 
 		itemModelGenerator.register(ModItems.COAL_BRIQUETTE, Models.GENERATED)
-		itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED)
 		itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED)
+
+		itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED)
+		itemModelGenerator.register(ModItems.CORN, Models.GENERATED)
 
 		itemModelGenerator.register(ModItems.RUBY_PICKAXE, Models.HANDHELD)
 		itemModelGenerator.register(ModItems.RUBY_AXE, Models.HANDHELD)

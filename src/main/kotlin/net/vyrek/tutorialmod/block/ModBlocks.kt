@@ -12,7 +12,10 @@ import net.minecraft.sound.BlockSoundGroup
 import net.minecraft.util.Identifier
 import net.minecraft.util.math.intprovider.UniformIntProvider
 import net.vyrek.tutorialmod.TutorialMod
+import net.vyrek.tutorialmod.block.custom.CornCropBlock
 import net.vyrek.tutorialmod.block.custom.SoundBlock
+import net.vyrek.tutorialmod.block.custom.TomatoCropBlock
+import net.vyrek.tutorialmod.util.ModIdentifier
 
 object ModBlocks {
 	val RUBY_BLOCK: Block = registerBlock(
@@ -107,9 +110,22 @@ object ModBlocks {
 		TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), BlockSetType.IRON)
 	)
 
+	val TOMATO_CROP: TomatoCropBlock = Registry.register(
+		Registries.BLOCK,
+		ModIdentifier.identifier("tomato_crop"),
+		TomatoCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT))
+	)
+
+	val CORN_CROP: CornCropBlock = Registry.register(
+		Registries.BLOCK,
+		ModIdentifier.identifier("corn_crop"),
+		CornCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT))
+	)
+
+
 	private fun registerBlock(name: String, block: Block): Block {
 		registerBlockItem(name, block)
-		return Registry.register(Registries.BLOCK, Identifier(TutorialMod.MOD_ID, name), block)
+		return Registry.register(Registries.BLOCK, ModIdentifier.identifier(name), block)
 	}
 
 	private fun registerBlockItem(name: String, block: Block): Item {
